@@ -1,0 +1,56 @@
+.recipes{
+    background-color: pink;
+}
+
+.index{
+    font-family: cursive;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    color: darkgreen;
+    padding: 10px;
+    margin: 30px;
+}
+
+.list{
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.lasagna{
+    background-color: greenyellow;
+}
+
+.one{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgreen;
+    font-family: coursive;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.mamaliga{
+    background-color: yellow;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align:center;
+    padding:10px;
+    margin: 20px;
+    color: orangered;
+    }
+
+.corn{
+    background-color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align:center;
+    padding:10px;
+    margin:20px;
+    color:blue;
+}
+
