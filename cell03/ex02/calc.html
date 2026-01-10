@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+
+        <style>
+            .left_member{
+                display: inline-block;
+            }
+            .right_member{
+                display: inline-block;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="calculator">
+            <div class="left_member">
+                <input
+                    type="text" id="leftNumber"/>
+            </div>
+            <select name="operation" id="operation">
+                <option value="addition">+</option>
+                <option value="subtraction">-</option>
+                <option value="multiplication">*</option>
+                <option value="division">/</option>
+                <option value="modulo">%</option>
+            </select>
+            <div class="right_member">
+                <input
+                    type="text" id="rightNumber"/>
+            </div>
+            
+            <input type="button" id="button" value="Try me!" />
+        </div>
+        
+
+
+        <script>
+            let button = document.getElementById("button");
+
+            function isPositiveInteger(str) {
+                return /^\d+$/.test(str);
+            }
+            function resultAlert(){
+                let leftValueStr = document.getElementById("leftNumber").value.trim();
+                let rightValueStr = document.getElementById("rightNumber").value.trim();
+                let operation = document.getElementById("operation").value;
+
+                if(!isPositiveInteger(leftValueStr) || !isPositiveInteger(rightValueStr)){
+                    alert("Error :(");
+                    return;
+                }
+
+                let leftValue = parseInt(leftValueStr, 10);
+                let rightValue = parseInt(rightValueStr, 10);
+
+                if((operation == "division" || operation == "modulo") && rightValue == 0){
+                    alert("It's over 9000!");
+                    console.log("It's over 9000!");
+                    return;
+                }
+
+                let result;
+
+                switch(operation){
+                    case "addition":
+                        result = leftValue + rightValue;
+                        break;
+                    case "subtraction":
+                        result = leftValue - rightValue;
+                        break;
+                    case "multiplication":
+                        result = leftValue * rightValue;
+                        break;
+                    case "division":
+                        result = leftValue / rightValue;
+                        break;
+                    case "modulo":
+                        result = leftValue % rightValue;
+                        break;
+                    default:
+                        alert("Unknown operation");
+                        return;
+                }
+                alert("Result: " + result);
+                console.log(result);
+                
+            }
+
+            button.addEventListener("click", resultAlert);
+
+            setInterval(() => {
+                alert("Please, use me...");
+            }, 30000);
+            
+        </script>
+    </body>
+
+</html>
