@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Balloon</title>
+        
+        <style>
+            body{
+                background-color: pink;
+            }
+            #balloon{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                border-radius: 100%;
+            }
+
+
+        </style>
+    </head>
+
+
+    <body>
+        <div id="balloon"></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            let $balloon = $("#balloon");
+            let size = 200;
+            let colors = ['red', 'green', 'blue'];
+            let currentColorIndex = 0;
+            
+            function increaseSize(){
+                size += 10;
+                
+                if (size > 420) {
+                    size = 200;
+                    currentColorIndex = 0;
+                }
+                else {
+                    currentColorIndex = (currentColorIndex + 1) % colors.length;
+                }
+
+               $balloon.css({
+                width: size + "px",
+                height: size + "px",
+                backgroundColor: colors[currentColorIndex]   
+            });
+        }
+            function decreaseSize(){
+                console.log("Mouse has left the balloon");
+                size = Math.max(200, size - 5);
+
+                currentColorIndex = (currentColorIndex - 1 + colors.length) % colors.length;
+
+                $balloon.css({
+                    width: size + "px",
+                    height: size + "px",
+                    backgroundColor: colors[currentColorIndex]
+            });
+        }
+            $balloon.on("click", increaseSize);
+            $balloon.on("mouseleave", decreaseSize);
+    });
+        </script>
+    </body>
+</html>

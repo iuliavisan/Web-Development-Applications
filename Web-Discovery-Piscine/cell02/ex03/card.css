@@ -1,0 +1,84 @@
+h2{
+    text-align: center;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background: rgb(201, 87, 129);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+}
+
+.card{
+    background: rgb(130, 14, 57);
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+table{
+    /* width: 100%; */
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border: none; 
+    /* that's what makes the table invisible */
+}
+
+td{
+    padding: 5px;
+    vertical-align: middle;
+    border: none;
+    text-align: center;
+}
+
+.pic{
+    width: 250px;
+    height: 200px;
+        
+}
+
+.login{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.description{
+    font-style: italic;
+    color: pink;
+    margin-bottom: 15px;
+
+}
+
+.icons img{
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+.icons img:hover{
+    transform: scale(1.2);
+}
+
+.contact_button{
+    background-color: skyblue;
+    border-radius: 10px;
+    color: darkblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact_button:hover{
+    transform: scale(1.2);
+    background-color: white;
+}
