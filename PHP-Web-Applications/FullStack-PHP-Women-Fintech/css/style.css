@@ -1,0 +1,134 @@
+:root {
+    --deep-green: #053225;
+    --raspberry: #E34A6F;
+    --pale-pink: #F7B2BD;
+    --greige: #B2A198;
+    --soft-green: #60A561;
+
+    --bg-color: #f8f9fa;           
+    --text-color: var(--deep-green); 
+    --card-bg: #ffffff;            
+    --nav-bg: var(--deep-green);   
+    --btn-color: var(--raspberry); 
+    --link-color: var(--raspberry);
+}
+
+.dark-mode {
+    --bg-color: var(--deep-green); 
+    --text-color: var(--pale-pink); 
+    --card-bg: #0a4233;            
+    --nav-bg: #021a13;            
+    --greige: #d3c4bc;            
+}
+
+body {
+    font-family: 'Rockwell', 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    color: var(--raspberry);
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: var(--nav-bg) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar-brand, .nav-link {
+    font-family: 'Rockwell', serif;
+    color: var(--pale-pink) !important;
+    font-size: 1.2rem;
+}
+
+.container {
+    flex: 1;
+    padding-top: 30px;
+}
+
+
+.member-card {
+    background-color: var(--card-bg);
+    margin-bottom: 30px;
+    border: 2px solid var(--greige); 
+    border-radius: 15px; 
+    box-shadow: 5px 5px 0px var(--greige); 
+    transition: all 0.3s ease; 
+    overflow: hidden;
+}
+
+.member-card:hover {
+    transform: translateY(-10px) scale(1.02); 
+    box-shadow: 10px 10px 0px var(--raspberry);
+    border-color: var(--raspberry);
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    color: var(--soft-green);
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    border: 3px solid var(--raspberry);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: left; 
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--greige);
+}
+
+
+.btn-primary {
+    background-color: var(--raspberry);
+    border-color: var(--raspberry);
+    border-radius: 50px; 
+    padding: 10px 30px;
+    font-family: 'Rockwell', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--deep-green);
+    border-color: var(--deep-green);
+    transform: scale(1.05);
+}
+
+.footer {
+    margin-top: auto;
+    background-color: var(--greige) !important;
+    color: var(--deep-green);
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    border: 2px solid var(--pale-pink);
+    margin-right: 10px;
+    transition: transform 0.5s;
+}
+.navbar-brand:hover img {
+    transform: rotate(360deg); 
+}
