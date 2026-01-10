@@ -1,0 +1,49 @@
+body, html{
+    margin: 0px;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    text-align: center;
+}
+
+.first{
+    background-image: url(../pic/bw2.jpg);
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.second{
+    background-color: black;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    padding: 30px;
+}
+
+.third{
+    background-image: url(../pic/bw1.jpg);
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+}
