@@ -1,0 +1,15 @@
+.star {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.star.active {
+    filter: grayscale(0%);
+}
+
+#confirmation {
+    margin-top: 20px;
+    display: none;
+}

@@ -1,0 +1,39 @@
+<form action="scriptServer.php" method="get"> 
+
+<fieldset>  
+<legend> Detalii personale: </legend>  
+    Nume <input type="text" name="nume" size="25" maxlength="50" /><p> 
+    Prenume <input type="text" name="prenume" size="25" maxlength="50" /><p> 
+    Email <input type="text" name="email" size="25" maxlength="50" /><p> 
+    Parola <input type="password" name="parola" size="25" maxlength="50" /><p> 
+    <textarea name="adresa" rows="5" cols="50"> introduceti adresa 
+dvs.</textarea><p> 
+</fieldset>  
+
+<fieldset>  
+<legend> Detalii rezervare: </legend> 
+<select name="camera"> 
+    <option value="single">Camera single</option> 
+    <option value="dubla" selected>Camera dubla</option> 
+    <option value="twin">Camera twin</option> 
+    <option value="suita">Suita</option> 
+</select><p> 
+
+<input type="radio" name="masa" value="mic dejun" checked>mic dejun<br> 
+<input type="radio" name="masa" value="demipensiune">demipensiune<br> 
+<input type="radio" name="masa" value="all inclusive">all inclusive<p> 
+
+<input type="checkbox" name="transfer" value="transfer">transfer aeroport<br> 
+<input type="checkbox" name="parcare" value="parcare">parcare<br> 
+<input type="checkbox" name="balcon" value="balcon">balcon<br> 
+<input type="checkbox" name="vedere" value="vedere">vedere<br> 
+<input type="checkbox" name="superior" value="superior">camera superior<br> 
+<input type="checkbox" name="seif" value="seif">seif<p> 
+
+Incarcare CI <input type="file" name="fisier" /> <p> 
+</fieldset> <p> 
+
+<input type="hidden" name="IP" value="acesta valoare este trimisa pe server"> 
+<input type="submit" name="trimite" value="Rezerva" /> 
+<input type="reset" value="Anuleaza"> 
+</form>

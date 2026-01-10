@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Elemente de input HTML5</title> 
+</head> 
+<body> 
+<form action="script.php" method="get" oninput="ales.value=parseInt(alege.value)"> 
+
+<input type="text" name="prenume" size="25" maxlength="50" placeholder="prenume" 
+    required="required" /> Camp obligatoriu <p> 
+
+<input list="tip" name="browser"> Camp de tip datalist <p> 
+<datalist id="tip">     
+
+    <option value="Apartament 1 camera"> 
+    <option value="Apartament 2 camere"> 
+    <option value="Apartament 3 camere"> 
+    <option value="Apartament 4 camere"> 
+    <option value="Apartament 5 camere"> 
+</datalist><p> 
+
+Cantitatea (intre 1 si 10): <input type="number" name="cantitate" min="1" 
+max="10"><p> 
+    
+1<input type="range" id="alege" min="1" max="10" value="5">10<br> 
+&nbsp; <input type="text" name="ales" size="3"><p> 
+<input type="date" name="data_eveniment" /> Camp de tip date <p> 
+<input type="datetime" name="data_ora_eveniment" /> Camp de tip datetime <p> 
+<input type="email" name="adresa_email" /> Camp de tip email <p> 
+<input type="tel" name="telefon" /> Camp de tip tel <p> 
+<input type="url" name="adresa_site" /> Camp de tip url <p> 
+<input type="color" name="culoare" />  Camp de tip color <p> 
+<input type="submit" name="formH5" /> 
+</form> 
+</body> 
+</html>

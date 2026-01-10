@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular</title>
+    <link rel="stylesheet" href="Problema1.css">
+</head>
+<body>
+    <nav>
+        <ul class="navibar">
+            <li><a href="#home">Acasă</a></li>
+            <li><a href="#despre">Despre</a></li>
+            <li><a href="#servicii">Servicii</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formular de contact -->
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" name="nume" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="prenume">Prenume:</label>
+                <input type="text" id="prenume" name="prenume" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="mesaj">Mesaj:</label>
+                <textarea id="mesaj" name="mesaj" rows="7" required></textarea>
+            </div>
+            
+            <button type="submit">Trimite</button>
+        </form>
+    </div>
+</body>
+</html>

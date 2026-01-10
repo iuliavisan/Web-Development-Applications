@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="Problema2.css">
+</head>
+<body>
+    <!-- Antet -->
+    <header class="antet">
+        <nav>
+            <ul class="meniu">
+                <li><a href="#meniu">Meniu</a></li>
+                <li><a href="#despre">Despre</a></li>
+                <li><a href="#rezervari">Rezervari</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Despre -->
+    <section id="despre" class="sectiune">
+        <h2>Despre restaurantul nostru</h2>
+        <div class="container">
+            <div class="text">
+                <p>Restaurant modern la periferia orasului.</p>
+            </div>
+            <img src="restaurant2.jpg" alt="Restaurant">
+        </div>
+    </section>
+
+    <!--Meniu -->
+    <section id="meniu" class="sectiune">
+        <h2>Meniul zilei</h2>
+        <div class="grid-meniu">
+            <div class="item">
+                <h3>Ficatei cu mamaliga</h3>
+                <p>Ficatei prajiti cu mamaliguta proaspata</p>
+                <p class="pret">50 RON</p>
+            </div>
+            <div class="item">
+                <h3>Ciorba de fasole</h3>
+                <p>Ciorba de fasole boabe</p>
+                <p class="pret">11 RON</p>
+            </div>
+            <div class="item">
+                <h3>Hamburger</h3>
+                <p>Hamburger cu cascaval, vita, bacon, paprika iute</p>
+                <p class="pret">20 RON</p>
+            </div>
+            <div class="item">
+                <h3>Clatite</h3>
+                <p>Clatite cu Nutella si gem de capsuni. Pret per 3buc.</p>
+                <p class="pret">12 RON</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formular Rezervări -->
+    <section id="rezervari" class="sectiune">
+        <h2>Rezervari de mese/ Rezervari pentru evenimente</h2>
+        <form class="formular">
+            <input type="text" placeholder="Nume" required>
+            <input type="email" placeholder="Email" required>
+            <input type="date" required>
+            <textarea placeholder="Mesaj"></textarea>
+            <button type="submit">Trimite</button>
+        </form>
+    </section>
+
+    <!-- Subsol -->
+    <footer class="subsol">
+        <p>Contact: 0700 00 00</p>
+        <div class="retele">
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>

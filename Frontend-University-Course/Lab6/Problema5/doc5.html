@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function next_picture ()
+        {
+            document.getElementById('poza').src="poza2.jpg";
+            document.getElementById('pozalink').href="poza2.jpg";
+        }
+        function prev_picture()
+        {
+            document.getElementById('poza').src="poza1.jpg";
+            document.getElementById('pozalink').href="poza1.jpg";
+        }
+    </script>
+</head>
+
+<body>
+    <a href="poza1.jpg" target="_blank" id="pozalink"><img src="poza1.jpg" id="poza"></a><p>
+    
+    <input type="button" onclick="prev_picture()" value="precedenta">
+    <input type="button" onclick="next_picture()" value="urmatoarea">
+
+    <a href="#" onclick="prev_picture()"> < </a>
+    <a href="#" onclick="next_picture()"> > </a>
+
+    <button onclick="prev_picture()">precedenta</button>
+    <button onclick="next_picture()">urmatoarea</button>
+</body>
+
+
+</html>
